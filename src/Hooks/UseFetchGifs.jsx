@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getGifs } from '../Services/GetGif';
+import { getGifs } from '../services/getGif';
 export const UseFetchGifs = (category) => {
   const [images, setImages] = useState([]);
   const [isLodaing, setIsLodaing] = useState(true);
