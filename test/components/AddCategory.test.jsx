@@ -32,7 +32,7 @@ describe('Pruebas en <AddCategory />', () => {
     const onAddCategory = jest.fn();
     render(<AddCategory onAddCategory={onAddCategory} />);
     const form = screen.getByRole('form');
-
+    fireEvent.submit(form);
     expect(onAddCategory).toHaveBeenCalledTimes(0);
     expect(onAddCategory).not.toHaveBeenCalled();
   });
